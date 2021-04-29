@@ -19,15 +19,24 @@ struct ContentView: View {
                     .frame(width: 200, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .clipShape(Circle())
                     .overlay(Circle().stroke(Color.white, lineWidth: 5))
-                
                 Text("Jedediah Hernandez")
                     .font(Font.custom("Antonio", size: 40.0))
                     .bold()
                     .foregroundColor(.white)
-                
                 Text("Software Engineer")
                     .foregroundColor(.white)
                     .font(.system(size: 25))
+                Divider()
+                HStack {
+                    RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
+                        .fill(Color.white)
+                        .frame(height: 50)
+                        .overlay(HStack {
+                            Image(systemName: "phone.fill").foregroundColor(.green)
+                            Text("720 544 1658")
+                        })
+                }
+                
             }
             
     }
