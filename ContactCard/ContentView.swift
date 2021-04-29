@@ -27,15 +27,9 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .font(.system(size: 25))
                 Divider()
-                HStack {
-                    RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-                        .fill(Color.white)
-                        .frame(height: 50)
-                        .overlay(HStack {
-                            Image(systemName: "phone.fill").foregroundColor(.green)
-                            Text("720 544 1658")
-                        })
-                }
+                
+                InfoView(text: "720 544 1658", imageName: "phone.fill")
+                InfoView(text: "jedediah@me.com", imageName: "envelope.fill")
                 
             }
             
@@ -49,3 +43,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
